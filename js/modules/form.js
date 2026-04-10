@@ -11,7 +11,7 @@
  *   const LEADS_API_URL = 'https://tu-backend.railway.app/leads';
  */
 
-const LEADS_API_URL = ''; // <- paste your backend URL here when you deploy
+const LEADS_API_URL = 'https://impacto-digital-production.up.railway.app/leads';
 
 // ---------------------------------------------------------------------------
 
