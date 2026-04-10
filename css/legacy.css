@@ -1,0 +1,106 @@
+/* ============================================================
+   LEGACY SUPPORT — @supports fallbacks for older browsers
+   ============================================================ */
+
+/* Fallback: browsers without backdrop-filter */
+@supports not (backdrop-filter: blur(1px)) {
+  .navbar.is-scrolled {
+    background-color: rgba(10, 10, 10, 0.97) !important;
+  }
+
+  [data-theme="light"] .navbar.is-scrolled {
+    background-color: rgba(250, 250, 247, 0.98) !important;
+  }
+}
+
+/* Fallback: browsers without clamp() */
+@supports not (width: clamp(1rem, 2vw, 3rem)) {
+  :root {
+    --text-xs:       0.75rem;
+    --text-sm:       0.875rem;
+    --text-base:     1rem;
+    --text-md:       1.125rem;
+    --text-lg:       1.25rem;
+    --text-xl:       1.5rem;
+    --text-2xl:      2rem;
+    --text-3xl:      2.75rem;
+    --text-4xl:      3.5rem;
+    --text-5xl:      4.5rem;
+    --text-6xl:      6.25rem;
+    --section-gap:   7rem;
+    --container-pad: 2.5rem;
+  }
+}
+
+/* Fallback: browsers without clip-path */
+@supports not (clip-path: polygon(0 0)) {
+  .hero::after { display: none; }
+}
+
+/* Fallback: browsers without CSS Grid */
+@supports not (display: grid) {
+  .services__grid,
+  .team__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+
+  .service-card { flex: 1 1 280px; }
+  .team-card    { flex: 1 1 260px; }
+
+  .why-us__layout,
+  .contact__layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .why-us__visual,
+  .why-us__content,
+  .contact__info,
+  .contact__form-wrapper {
+    flex: 1 1 300px;
+  }
+
+  .form__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .form__group { flex: 1 1 180px; }
+}
+
+/* Fallback: browsers without CSS custom properties */
+@supports not (--css: variables) {
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0A0A0A;
+    color: #FAFAF7;
+  }
+
+  .btn--primary {
+    background-color: #C9A037;
+    color: #0A0A0A;
+    border-color: #C9A037;
+  }
+
+  .navbar__logo-accent,
+  .section__eyebrow,
+  em {
+    color: #C9A037;
+  }
+
+  .service-card { background-color: #1A1A1A; }
+}
+
+/* Fallback: browsers without position: sticky */
+@supports not (position: sticky) {
+  .navbar { position: fixed; }
+}
+
+/* Fallback: browsers without smooth scroll */
+@supports not (scroll-behavior: smooth) {
+  html { scroll-behavior: auto; }
+}

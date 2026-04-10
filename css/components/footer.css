@@ -1,0 +1,118 @@
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.footer {
+  position: relative;
+  z-index: 1;              /* stack above sticky hero shrink */
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-16) var(--space-12);
+}
+
+/* ---- Layout ---- */
+
+.footer__layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
+  flex-wrap: wrap;
+}
+
+/* ---- Brand ---- */
+
+.footer__logo {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.01em;
+}
+
+.footer__logo span {
+  color: var(--color-accent-text);
+}
+
+.footer__tagline {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  max-width: 28ch;
+  line-height: 1.65;
+}
+
+/* ---- Nav links ---- */
+
+.footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer__nav a {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-base);
+}
+
+.footer__nav a:hover,
+.footer__nav a:focus-visible {
+  color: var(--color-accent-text);
+}
+
+/* ---- Social icons ---- */
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  transition:
+    border-color  var(--transition-base),
+    color         var(--transition-base),
+    box-shadow    var(--transition-base),
+    transform     var(--transition-base);
+}
+
+.footer__social-link:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-accent-text);
+  box-shadow: 0 0 12px rgba(201,160,55,0.18);
+  transform: translateY(-2px);
+}
+
+/* ---- Bottom bar ---- */
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-8);
+}
+
+.footer__copy {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 540px) {
+  .footer__layout { flex-direction: column; }
+}

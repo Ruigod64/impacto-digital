@@ -1,0 +1,145 @@
+/* ============================================================
+   DESIGN TOKENS — CSS Custom Properties
+   ============================================================ */
+
+:root {
+  /* ---- Primitive palette ---- */
+  --primitive-black:      #0A0A0A;
+  --primitive-near-black: #111111;
+  --primitive-dark:       #1A1A1A;
+  --primitive-dark-mid:   #242424;
+  --primitive-gold:       #C9A037;
+  --primitive-gold-light: #E2BC5A;
+  --primitive-gold-dark:  #9A7820;
+  --primitive-gold-deep:  #7A5E10;
+  --primitive-white:      #FAFAF7;
+  --primitive-cream:      #F5F2EB;
+  --primitive-cream-dark: #EDE9E0;
+  --primitive-gray-100:   #E2DEDB;
+  --primitive-gray-400:   #9A9590;
+  --primitive-gray-600:   #6A6560;
+  --primitive-gray-800:   #3A3530;
+
+  /* ---- Blue palette (light-mode accents) ---- */
+  --primitive-blue:       #2F4FE3;
+  --primitive-blue-light: #4F6FFF;
+  --primitive-blue-mid:   #2540CC;
+  --primitive-blue-dark:  #1E2FA3;
+  --primitive-blue-deep:  #152080;
+  --primitive-blue-navy:  #070B1E;   /* hero bg in light mode */
+
+  /* ---- Hero signal glow (theme-aware CSS vars) ---- */
+  --hero-glow-a:        rgba(201,160,55,0.32);
+  --hero-glow-b:        rgba(201,160,55,0.10);
+  --hero-glow-bright-a: rgba(201,160,55,0.55);
+  --hero-glow-bright-b: rgba(201,160,55,0.22);
+
+  /* ---- Semantic colors — Dark (default) ---- */
+  --color-bg:           var(--primitive-black);
+  --color-bg-elevated:  var(--primitive-near-black);
+  --color-bg-surface:   var(--primitive-dark);
+  --color-bg-surface-2: var(--primitive-dark-mid);
+
+  --color-text-primary:   var(--primitive-white);
+  --color-text-secondary: var(--primitive-gray-400);
+  --color-text-muted:     var(--primitive-gray-600);
+
+  --color-accent:       var(--primitive-gold);
+  --color-accent-hover: var(--primitive-gold-light);
+  --color-accent-text:  var(--primitive-gold);
+
+  --color-border:       rgba(201, 160, 55, 0.13);
+  --color-border-subtle:rgba(255, 255, 255, 0.06);
+  --color-border-hover: rgba(201, 160, 55, 0.38);
+
+  --shadow-sm:   0 1px 4px  rgba(0, 0, 0, 0.45);
+  --shadow-md:   0 4px 18px rgba(0, 0, 0, 0.55);
+  --shadow-lg:   0 8px 36px rgba(0, 0, 0, 0.65);
+  --shadow-gold: 0 0 32px   rgba(201, 160, 55, 0.16);
+
+  /* ---- Typography ---- */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body:    'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  --text-xs:   clamp(0.70rem, 1.5vw, 0.75rem);
+  --text-sm:   clamp(0.82rem, 1.8vw, 0.875rem);
+  --text-base: clamp(0.92rem, 2vw,   1rem);
+  --text-md:   clamp(1rem,    2.2vw, 1.125rem);
+  --text-lg:   clamp(1.1rem,  2.5vw, 1.25rem);
+  --text-xl:   clamp(1.3rem,  3vw,   1.5rem);
+  --text-2xl:  clamp(1.5rem,  4vw,   2rem);
+  --text-3xl:  clamp(2rem,    5vw,   2.75rem);
+  --text-4xl:  clamp(2.5rem,  6vw,   3.5rem);
+  --text-5xl:  clamp(3rem,    7vw,   4.5rem);
+  --text-6xl:  clamp(3.25rem, 9vw,   6.25rem);
+
+  /* ---- Spacing ---- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  --section-gap:    clamp(5rem, 10vw, 9rem);
+  --container-max:  1280px;
+  --container-pad:  clamp(1.25rem, 5vw, 3.5rem);
+  --navbar-height:  5rem;
+
+  /* ---- Radius ---- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --dur-fast:   150ms;
+  --dur-base:   260ms;
+  --dur-slow:   420ms;
+  --dur-slower: 640ms;
+
+  --transition-base: var(--dur-base) var(--ease-in-out);
+  --transition-slow: var(--dur-slow) var(--ease-in-out);
+}
+
+/* ---- Light theme overrides ---- */
+[data-theme="light"] {
+  --color-bg:           var(--primitive-white);
+  --color-bg-elevated:  var(--primitive-cream);
+  --color-bg-surface:   var(--primitive-cream-dark);
+  --color-bg-surface-2: var(--primitive-gray-100);
+
+  --color-text-primary:   var(--primitive-black);
+  --color-text-secondary: var(--primitive-gray-800);
+  --color-text-muted:     var(--primitive-gray-600);
+
+  --color-accent:       var(--primitive-gold);
+  --color-accent-hover: var(--primitive-gold-light);
+  --color-accent-text:  var(--primitive-gold-deep);
+
+  --color-border:        rgba(201, 160, 55, 0.18);
+  --color-border-subtle: rgba(0, 0, 0, 0.07);
+  --color-border-hover:  rgba(201, 160, 55, 0.42);
+
+  --shadow-sm:   0 1px 4px  rgba(0, 0, 0, 0.10);
+  --shadow-md:   0 4px 18px rgba(0, 0, 0, 0.13);
+  --shadow-lg:   0 8px 36px rgba(0, 0, 0, 0.17);
+  --shadow-gold: 0 0 32px   rgba(201, 160, 55, 0.22);
+
+  /* Hero glow overrides → gold */
+  --hero-glow-a:        rgba(201, 160, 55, 0.28);
+  --hero-glow-b:        rgba(201, 160, 55, 0.08);
+  --hero-glow-bright-a: rgba(201, 160, 55, 0.48);
+  --hero-glow-bright-b: rgba(201, 160, 55, 0.18);
+}

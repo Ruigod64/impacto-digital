@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" class="preload">
+<head>
+  <!-- ============================================================
+       CHARSET & VIEWPORT
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO
+       ============================================================ -->
+  <title>Impacto Digital — Agencia de Marketing Estratégico</title>
+  <meta name="description"  content="Impacto Digital es una agencia de marketing estratégico enfocada en construir marcas con dirección, coherencia y posicionamiento real." />
+  <meta name="keywords"     content="agencia marketing digital, estrategia de marca, redes sociales, publicidad digital, landing pages, posicionamiento de marca" />
+  <meta name="author"       content="Impacto Digital" />
+  <meta name="robots"       content="index, follow" />
+  <link rel="canonical"     href="https://tusitio.com/" />
+
+  <!-- ============================================================
+       OPEN GRAPH — Facebook, WhatsApp, LinkedIn
+       ============================================================ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="Impacto Digital" />
+  <meta property="og:title"       content="Impacto Digital — Agencia de Marketing Estratégico" />
+  <meta property="og:description" content="Diseñamos y ejecutamos estrategias de marketing digital orientadas al posicionamiento y crecimiento de marca." />
+  <meta property="og:url"         content="https://tusitio.com/" />
+  <meta property="og:image"       content="https://tusitio.com/assets/logo.jpeg" />
+  <meta property="og:image:alt"   content="Impacto Digital — Agencia de Marketing Estratégico" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="es_MX" />
+
+  <!-- ============================================================
+       TWITTER CARD
+       ============================================================ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Impacto Digital — Agencia de Marketing Estratégico" />
+  <meta name="twitter:description" content="Diseñamos y ejecutamos estrategias de marketing digital orientadas al posicionamiento y crecimiento de marca." />
+  <meta name="twitter:image"       content="https://tusitio.com/assets/logo.jpeg" />
+  <meta name="twitter:image:alt"   content="Impacto Digital — Agencia de Marketing Estratégico" />
+
+  <!-- ============================================================
+       PWA MANIFEST & THEME
+       ============================================================ -->
+  <link rel="manifest"   href="manifest.json" />
+  <meta name="theme-color"              content="#C9A037" />
+  <meta name="mobile-web-app-capable"   content="yes" />
+  <meta name="apple-mobile-web-app-capable"          content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title"            content="Impacto Digital" />
+  <link rel="apple-touch-icon" href="assets/logo.jpeg" />
+
+  <!-- ============================================================
+       FAVICON
+       ============================================================ -->
+  <link rel="icon" id="favicon" type="image/png" href="assets/pajaro-dorado.png" />
+
+  <!-- ============================================================
+       THEME INIT — inline, runs before paint to prevent flash
+       ============================================================ -->
+  <script>
+    document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+
+  <!-- ============================================================
+       FONTS
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ============================================================
+       STYLES
+       ============================================================ -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- ============================================================
+       LCP PRELOAD — hero logo
+       ============================================================ -->
+  <link rel="preload" as="image" href="assets/logo-Photoroom.png" fetchpriority="high" />
+
+  <!-- ============================================================
+       SCHEMA.ORG — Organization
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Impacto Digital",
+    "description": "Agencia de marketing estratégico enfocada en construir marcas con dirección, coherencia y posicionamiento real.",
+    "url": "https://tusitio.com/",
+    "logo": "https://tusitio.com/assets/logo.jpeg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+523310067968",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
+    },
+    "sameAs": [
+      "https://www.instagram.com/impactodigital007/",
+      "https://www.facebook.com/Impactodigital007"
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       GSAP + ScrollTrigger (CDN, deferred)
+       ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Accessibility: skip to main content -->
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <!-- ================================================================
+       HEADER / NAVBAR
+       ================================================================ -->
+  <header class="navbar" role="banner">
+    <div class="navbar__container">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navbar__logo" aria-label="Impacto Digital — volver al inicio">
+        Impacto<span class="navbar__logo-accent"> Digital</span>
+      </a>
+
+      <!-- Desktop navigation -->
+      <nav class="navbar__nav" role="navigation" aria-label="Navegación principal">
+        <ul class="navbar__list" role="list">
+          <li><a href="#sobre-nosotros"  class="navbar__link">Nosotros</a></li>
+          <li><a href="#servicios"       class="navbar__link">Servicios</a></li>
+          <li><a href="#ejemplos"        class="navbar__link">Ejemplos</a></li>
+          <li><a href="#metodologia"     class="navbar__link">Metodología</a></li>
+          <li><a href="#nosotros"        class="navbar__link">Por Qué Nosotros</a></li>
+          <li><a href="#equipo"          class="navbar__link">Equipo</a></li>
+          <li><a href="#como-trabajamos" class="navbar__link">Cómo Trabajamos</a></li>
+          <li><a href="#contacto"        class="navbar__link navbar__link--cta">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme toggle + hamburger -->
+      <div class="navbar__actions">
+
+        <!-- Theme toggle -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Cambiar a modo claro"
+        >
+          <!-- Sun icon (visible in dark mode) -->
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <circle cx="12" cy="12" r="4"/>
+              <line x1="12" y1="2"  x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="4.22" y1="4.22"   x2="6.34" y2="6.34"/>
+              <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+              <line x1="2"  y1="12" x2="5"  y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+              <line x1="4.22" y1="19.78"  x2="6.34" y2="17.66"/>
+              <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+            </svg>
+          </span>
+          <!-- Moon icon (visible in light mode) -->
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Hamburger (mobile only) -->
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Mobile menu overlay — direct child of <body> so backdrop-filter on
+       .navbar does NOT create a new containing block for position:fixed -->
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Menú de navegación"
+    aria-hidden="true"
+  >
+    <!-- Grain texture -->
+    <div class="mobile-menu__grain" aria-hidden="true"></div>
+
+    <!-- Top bar: logo -->
+    <div class="mobile-menu__header">
+      <a href="#inicio" class="mobile-menu__logo" tabindex="-1">
+        Impacto<span>Digital</span>
+      </a>
+    </div>
+
+    <!-- Navigation links -->
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <ul class="mobile-menu__list" role="list">
+        <li class="mobile-menu__item">
+          <a href="#sobre-nosotros" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">01</span>
+            Nosotros
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#servicios" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">02</span>
+            Servicios
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#ejemplos" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">03</span>
+            Ejemplos
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#metodologia" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">04</span>
+            Metodología
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#nosotros" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">05</span>
+            Eligenos
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#equipo" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">06</span>
+            Equipo
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#como-trabajamos" class="mobile-menu__link">
+            <span class="mobile-menu__num" aria-hidden="true">07</span>
+            Cómo Trabajamos
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bottom: CTA + tagline -->
+    <div class="mobile-menu__footer">
+      <a href="#contacto" class="btn btn--primary mobile-menu__cta">
+        Contáctanos
+        <span class="btn__icon" aria-hidden="true">→</span>
+      </a>
+      <p class="mobile-menu__tagline">Marca. Contenido. Impacto.</p>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       MAIN CONTENT
+       ================================================================ -->
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="inicio" class="hero" aria-labelledby="heroHeading">
+
+      <!-- Atmospheric background layers -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow-primary"></div>
+        <div class="hero__glow-secondary"></div>
+
+        <!-- ── Signal Network background ── -->
+        <div class="hero__data-bg">
+
+          <!-- Neural network: nodes + connections + animated data packets -->
+          <svg class="hero__neural" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <filter id="node-glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <filter id="packet-glow" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="2" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <!-- paths for animateMotion -->
+              <path id="p-a" d="M100,175 L395,140 L570,265 L800,425"/>
+              <path id="p-b" d="M570,265 L800,425 L995,540 L1170,415"/>
+              <path id="p-c" d="M730,145 L940,260 L1110,155 L1295,280"/>
+              <path id="p-d" d="M170,490 L435,450 L660,580 L800,425"/>
+              <path id="p-e" d="M1295,280 L1170,415 L995,540 L800,425"/>
+            </defs>
+
+            <!-- Connections -->
+            <g stroke="rgba(201,160,55,0.18)" stroke-width="1" fill="none" stroke-linecap="round">
+              <line x1="68"  y1="390" x2="100" y2="175"/>
+              <line x1="68"  y1="390" x2="170" y2="490"/>
+              <line x1="100" y1="175" x2="270" y2="310"/>
+              <line x1="100" y1="175" x2="395" y2="140"/>
+              <line x1="270" y1="310" x2="170" y2="490"/>
+              <line x1="270" y1="310" x2="435" y2="450"/>
+              <line x1="170" y1="490" x2="435" y2="450"/>
+              <line x1="395" y1="140" x2="570" y2="265"/>
+              <line x1="395" y1="140" x2="730" y2="145"/>
+              <line x1="435" y1="450" x2="570" y2="265"/>
+              <line x1="435" y1="450" x2="660" y2="580"/>
+              <line x1="570" y1="265" x2="730" y2="145"/>
+              <line x1="570" y1="265" x2="800" y2="425"/>
+              <line x1="660" y1="580" x2="800" y2="425"/>
+              <line x1="730" y1="145" x2="940" y2="260"/>
+              <line x1="800" y1="425" x2="940" y2="260"/>
+              <line x1="800" y1="425" x2="995" y2="540"/>
+              <line x1="940" y1="260" x2="1110" y2="155"/>
+              <line x1="995" y1="540" x2="1170" y2="415"/>
+              <line x1="1110" y1="155" x2="1170" y2="415"/>
+              <line x1="1110" y1="155" x2="1295" y2="280"/>
+              <line x1="1170" y1="415" x2="1375" y2="510"/>
+              <line x1="1295" y1="280" x2="1375" y2="510"/>
+            </g>
+
+            <!-- Animated data packets -->
+            <circle r="2.5" fill="#E2BC5A" filter="url(#packet-glow)">
+              <animateMotion dur="4s" repeatCount="indefinite" begin="0s"><mpath href="#p-a"/></animateMotion>
+            </circle>
+            <circle r="2" fill="rgba(226,188,90,0.8)" filter="url(#packet-glow)">
+              <animateMotion dur="5.2s" repeatCount="indefinite" begin="1.2s"><mpath href="#p-b"/></animateMotion>
+            </circle>
+            <circle r="2.5" fill="#C9A037" filter="url(#packet-glow)">
+              <animateMotion dur="4.8s" repeatCount="indefinite" begin="2.4s"><mpath href="#p-c"/></animateMotion>
+            </circle>
+            <circle r="2" fill="rgba(201,160,55,0.75)" filter="url(#packet-glow)">
+              <animateMotion dur="3.6s" repeatCount="indefinite" begin="0.6s"><mpath href="#p-d"/></animateMotion>
+            </circle>
+            <circle r="2" fill="rgba(226,188,90,0.65)" filter="url(#packet-glow)">
+              <animateMotion dur="4.2s" repeatCount="indefinite" begin="3s"><mpath href="#p-e"/></animateMotion>
+            </circle>
+
+            <!-- Nodes (hub nodes pulse their radius) -->
+            <g fill="rgba(201,160,55,0.72)" filter="url(#node-glow)">
+              <circle cx="68"  cy="390" r="2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.1s" repeatCount="indefinite" begin="0s"/></circle>
+              <circle cx="100" cy="175" r="3"><animate attributeName="opacity" values="0.4;1;0.4" dur="4.0s" repeatCount="indefinite" begin="0.5s"/></circle>
+              <circle cx="270" cy="310" r="2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite" begin="1.0s"/></circle>
+              <circle cx="170" cy="490" r="3"><animate attributeName="opacity" values="0.4;1;0.4" dur="5.0s" repeatCount="indefinite" begin="0.3s"/></circle>
+              <circle cx="395" cy="140" r="2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.2s" repeatCount="indefinite" begin="1.5s"/></circle>
+              <circle cx="435" cy="450" r="2.5"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.0s" repeatCount="indefinite" begin="0.8s"/></circle>
+              <!-- Hub n6 -->
+              <circle cx="570" cy="265" r="4">
+                <animate attributeName="r"       values="4;5.5;4"   dur="4.0s" repeatCount="indefinite" begin="0s"/>
+                <animate attributeName="opacity" values="0.6;1;0.6" dur="4.0s" repeatCount="indefinite" begin="0s"/>
+              </circle>
+              <circle cx="660" cy="580" r="2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.8s" repeatCount="indefinite" begin="2.0s"/></circle>
+              <circle cx="730" cy="145" r="3"><animate attributeName="opacity" values="0.4;1;0.4" dur="4.5s" repeatCount="indefinite" begin="0.7s"/></circle>
+              <!-- Hub n9 -->
+              <circle cx="800" cy="425" r="4">
+                <animate attributeName="r"       values="4;5.5;4"   dur="5.0s" repeatCount="indefinite" begin="1.0s"/>
+                <animate attributeName="opacity" values="0.6;1;0.6" dur="5.0s" repeatCount="indefinite" begin="1.0s"/>
+              </circle>
+              <circle cx="940" cy="260" r="2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.2s" repeatCount="indefinite" begin="1.8s"/></circle>
+              <circle cx="995" cy="540" r="2.5"><animate attributeName="opacity" values="0.4;1;0.4" dur="4.0s" repeatCount="indefinite" begin="0.4s"/></circle>
+              <circle cx="1110" cy="155" r="3"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.6s" repeatCount="indefinite" begin="1.2s"/></circle>
+              <circle cx="1170" cy="415" r="2"><animate attributeName="opacity" values="0.4;1;0.4" dur="4.1s" repeatCount="indefinite" begin="0.9s"/></circle>
+              <!-- Hub n14 -->
+              <circle cx="1295" cy="280" r="4">
+                <animate attributeName="r"       values="4;5.5;4"   dur="4.0s" repeatCount="indefinite" begin="2.0s"/>
+                <animate attributeName="opacity" values="0.6;1;0.6" dur="4.0s" repeatCount="indefinite" begin="2.0s"/>
+              </circle>
+              <circle cx="1375" cy="510" r="2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.0s" repeatCount="indefinite" begin="1.6s"/></circle>
+            </g>
+
+            <!-- Micro data labels near hub nodes -->
+            <g font-family="monospace" font-size="8" fill="rgba(201,160,55,0.35)" letter-spacing="0.5">
+              <text x="580" y="255">CTR ↑</text>
+              <text x="810" y="415">ROI +</text>
+              <text x="1305" y="270">SEO ▲</text>
+            </g>
+          </svg>
+
+          <!-- Analytics growth curves at the bottom -->
+          <svg class="hero__analytics" viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="curve-fill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#C9A037" stop-opacity="0.12"/>
+                <stop offset="100%" stop-color="#C9A037" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- Area under main line -->
+            <polygon
+              points="0,178 160,162 300,148 440,125 560,138 680,105 800,118 920,82 1040,95 1160,62 1280,74 1440,42 1440,200 0,200"
+              fill="url(#curve-fill)"
+            />
+            <!-- Main growth line -->
+            <polyline
+              points="0,178 160,162 300,148 440,125 560,138 680,105 800,118 920,82 1040,95 1160,62 1280,74 1440,42"
+              fill="none" stroke="rgba(201,160,55,0.28)" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="2000" stroke-dashoffset="2000"
+            >
+              <animate attributeName="stroke-dashoffset" from="2000" to="0" dur="2.5s" fill="freeze" begin="0.8s"/>
+            </polyline>
+            <!-- Secondary dimmer line -->
+            <polyline
+              points="0,188 160,174 300,162 440,140 560,153 680,120 800,134 920,98 1040,112 1160,78 1280,92 1440,62"
+              fill="none" stroke="rgba(201,160,55,0.13)" stroke-width="1"
+              stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="2000" stroke-dashoffset="2000"
+            >
+              <animate attributeName="stroke-dashoffset" from="2000" to="0" dur="3s" fill="freeze" begin="1.4s"/>
+            </polyline>
+            <!-- Vertical tick marks (axis markers) -->
+            <g stroke="rgba(201,160,55,0.15)" stroke-width="1">
+              <line x1="360"  y1="190" x2="360"  y2="200"/>
+              <line x1="720"  y1="190" x2="720"  y2="200"/>
+              <line x1="1080" y1="190" x2="1080" y2="200"/>
+            </g>
+          </svg>
+
+          <!-- Floating particles -->
+          <div class="hero__particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <!-- Horizontal scan beam -->
+          <div class="hero__scan-beam"></div>
+
+        </div><!-- /.hero__data-bg -->
+
+        <div class="hero__grain"></div>
+      </div>
+
+      <!-- Luxury corner decorations -->
+      <div class="hero__corner hero__corner--tl" aria-hidden="true"></div>
+      <div class="hero__corner hero__corner--tr" aria-hidden="true"></div>
+      <div class="hero__corner hero__corner--bl" aria-hidden="true"></div>
+      <div class="hero__corner hero__corner--br" aria-hidden="true"></div>
+
+      <div class="hero__content">
+
+        <!-- Logo as centerpiece — mix-blend-mode:screen makes black transparent -->
+        <div class="hero__logo-wrap">
+          <img
+            src="assets/logo-Photoroom.png"
+            alt="Impacto Digital — Marca. Contenido. Impacto."
+            class="hero__logo-img hero__logo-img--dark"
+            fetchpriority="high"
+          />
+          <img
+            src="assets/logo-Photoroom.png"
+            alt="Impacto Digital — Marca. Contenido. Impacto."
+            class="hero__logo-img hero__logo-img--light"
+          />
+        </div>
+
+        <!-- Ornamental divider -->
+        <div class="hero__divider" aria-hidden="true">
+          <span></span><span class="hero__divider-diamond"></span><span></span>
+        </div>
+
+        <h1 id="heroHeading" class="hero__subheading">
+          Diseñamos y ejecutamos estrategias de marketing digital
+          orientadas al posicionamiento y crecimiento real de tu marca.
+        </h1>
+
+        <div class="hero__actions">
+          <a href="#servicios" class="btn btn--primary">
+            Explorar servicios
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+          <a href="#contacto" class="btn btn--ghost">Agenda una consulta</a>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-text">Desplaza</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT — SOBRE NOSOTROS
+         ============================================================ -->
+    <section id="sobre-nosotros" class="about section" aria-labelledby="aboutHeading">
+      <div class="container">
+
+        <div class="section__header" style="text-align: center;">
+          <p class="section__eyebrow">Sobre Impacto Digital</p>
+          <h2 id="aboutHeading" class="section__heading">Sobre Nosotros</h2>
+        </div>
+
+        <!-- Two-column: text + image -->
+        <div class="about__layout">
+
+          <!-- Content -->
+          <div class="about__content">
+            <p class="about__intro-text">
+              En <strong>Impacto Digital</strong> somos una agencia de marketing digital estratégico
+              enfocada en posicionar marcas, estructurar negocios y generar crecimiento real.
+              No creemos en el marketing improvisado ni en publicar por publicar. Creemos en la
+              estrategia, en la dirección y en la construcción inteligente de una presencia digital
+              que convierta visibilidad en autoridad y autoridad en resultados.
+            </p>
+            <p class="about__intro-text">
+              <strong>Nuestro trabajo</strong> no es solo hacer que una marca se vea bien, sino que
+              tenga coherencia, identidad y propósito dentro del mercado. Analizamos cada negocio
+              desde su esencia, su visión y su objetivo comercial, para diseñar estrategias que
+              conecten con su público, fortalezcan su posicionamiento y generen crecimiento sostenible.
+            </p>
+            <p class="about__intro-text">
+              En <strong>Impacto Digital</strong> entendemos que cada marca tiene una identidad única.
+              Por eso no trabajamos con fórmulas genéricas, sino con estructuras personalizadas que
+              alinean imagen, mensaje, estrategia y ejecución.
+            </p>
+
+            <div class="about__taglines">
+              <p>Somos estrategia. <span>Somos dirección.</span></p>
+              <p>Somos crecimiento con intención.</p>
+              <p class="about__taglines-highlight">Impacto Digital no solo hace marketing… <em>construye impacto.</em></p>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="about__visual">
+            <div class="parallax-wrapper parallax-wrapper--cutout">
+              <img
+                src="assets/mujer_3-Photoroom.png"
+                alt="Impacto Digital — Estrategia y posicionamiento de marca"
+                class="about__img parallax-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Vision + Misión cards -->
+        <div class="about__grid">
+
+          <article class="about-card" aria-labelledby="about-vision">
+            <p class="about-card__eyebrow">Nuestra visión</p>
+            <h3 id="about-vision" class="about-card__title">Visión</h3>
+            <p class="about-card__desc">
+              Convertir negocios en marcas posicionadas, sólidas y estratégicas
+              dentro del mundo digital.
+            </p>
+          </article>
+
+          <article class="about-card" aria-labelledby="about-mision">
+            <p class="about-card__eyebrow">Nuestra misión</p>
+            <h3 id="about-mision" class="about-card__title">Misión</h3>
+            <p class="about-card__desc">
+              Diseñar estrategias inteligentes que impulsen el crecimiento, la
+              visibilidad y la autoridad de cada marca que confía en nosotros.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES
+         ============================================================ -->
+    <section id="servicios" class="services section" aria-labelledby="servicesHeading">
+      <div class="container">
+
+        <div class="section__header">
+          <p class="section__eyebrow">Lo que hacemos</p>
+          <h2 id="servicesHeading" class="section__heading">Nuestros Servicios</h2>
+          <p class="section__subheading">
+            Cada servicio está diseñado para construir presencia real,
+            no métricas vacías. Precisión estratégica en cada etapa.
+          </p>
+        </div>
+
+        <!-- Service rows -->
+        <div class="services-list" role="list">
+
+          <!-- 01 Estrategia de Marca -->
+          <article class="service-row" role="listitem" aria-labelledby="srv-brand">
+            <div class="service-row__num" aria-hidden="true">01</div>
+            <div class="service-row__body">
+              <div class="service-row__top">
+                <h3 id="srv-brand" class="service-row__title">Estrategia de Marca</h3>
+                <p class="service-row__lead">Antes de publicar, analizamos. Definimos identidad, propuesta de valor, diferenciación y estructura de comunicación.</p>
+              </div>
+              <ul class="service-row__tags" aria-label="Incluye">
+                <li class="service-row__tag">Definición de mensaje estratégico</li>
+                <li class="service-row__tag">Construcción de identidad digital</li>
+                <li class="service-row__tag">Posicionamiento de marca</li>
+                <li class="service-row__tag">Escalabilidad</li>
+              </ul>
+            </div>
+            <span class="service-row__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <!-- 02 Marketing Digital Estratégico -->
+          <article class="service-row" role="listitem" aria-labelledby="srv-mkt">
+            <div class="service-row__num" aria-hidden="true">02</div>
+            <div class="service-row__body">
+              <div class="service-row__top">
+                <h3 id="srv-mkt" class="service-row__title">Marketing Digital Estratégico</h3>
+                <p class="service-row__lead">Diseñamos planes de acción personalizados según el objetivo de tu negocio.</p>
+              </div>
+              <ul class="service-row__tags" aria-label="Incluye">
+                <li class="service-row__tag">Planeación de contenido con intención comercial</li>
+                <li class="service-row__tag">Calendarios estratégicos</li>
+                <li class="service-row__tag">Embudos básicos de conversión</li>
+                <li class="service-row__tag">Optimización de presencia digital</li>
+              </ul>
+            </div>
+            <span class="service-row__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <!-- 03 Gestión y Crecimiento en Redes -->
+          <article class="service-row" role="listitem" aria-labelledby="srv-redes">
+            <div class="service-row__num" aria-hidden="true">03</div>
+            <div class="service-row__body">
+              <div class="service-row__top">
+                <h3 id="srv-redes" class="service-row__title">Gestión y Crecimiento en Redes</h3>
+                <p class="service-row__lead">No solo publicamos, gestionamos crecimiento.</p>
+              </div>
+              <ul class="service-row__tags" aria-label="Incluye">
+                <li class="service-row__tag">Diseño de contenido para redes</li>
+                <li class="service-row__tag">Dirección visual</li>
+                <li class="service-row__tag">Optimización de perfiles</li>
+                <li class="service-row__tag">Coherencia de marca en plataformas</li>
+              </ul>
+            </div>
+            <span class="service-row__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <!-- 04 Publicidad Digital -->
+          <article class="service-row" role="listitem" aria-labelledby="srv-ads">
+            <div class="service-row__num" aria-hidden="true">04</div>
+            <div class="service-row__body">
+              <div class="service-row__top">
+                <h3 id="srv-ads" class="service-row__title">Publicidad Digital</h3>
+                <p class="service-row__lead">Amplificamos resultados con campañas pagadas.</p>
+              </div>
+              <ul class="service-row__tags" aria-label="Incluye">
+                <li class="service-row__tag">Diseño de campañas en Meta Ads</li>
+                <li class="service-row__tag">Segmentación estratégica</li>
+                <li class="service-row__tag">Optimización de inversión</li>
+                <li class="service-row__tag">Análisis de resultados</li>
+              </ul>
+            </div>
+            <span class="service-row__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <!-- 05 Landing Pages — Featured -->
+          <article class="service-row service-row--featured" role="listitem" aria-labelledby="srv-landing">
+            <div class="service-row__num" aria-hidden="true">05</div>
+            <div class="service-row__body">
+              <div class="service-row__top">
+                <div class="service-row__badge">Destacado</div>
+                <h3 id="srv-landing" class="service-row__title">Landing Pages</h3>
+                <p class="service-row__lead">Logrando captar clientes potenciales y aumentar las conversiones de tu negocio.</p>
+              </div>
+              <ul class="service-row__tags" aria-label="Incluye">
+                <li class="service-row__tag">Diseño y desarrollo de páginas de aterrizaje</li>
+                <li class="service-row__tag">Optimizadas para conversión</li>
+                <li class="service-row__tag">Experiencia de usuario fluida</li>
+                <li class="service-row__tag">Captación de clientes potenciales</li>
+              </ul>
+            </div>
+            <span class="service-row__arrow" aria-hidden="true">→</span>
+          </article>
+
+        </div>
+
+        <!-- Visual break -->
+        <div class="services__visual">
+          <div class="parallax-wrapper parallax-wrapper--cutout">
+            <img
+              src="assets/mujer_4-Photoroom.png"
+              alt="Impacto Digital — Nuestros servicios"
+              class="services__visual-img parallax-img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Manifesto -->
+        <div class="services__manifesto" aria-label="Nuestra filosofía">
+          <div class="services__manifesto-rule" aria-hidden="true"></div>
+          <p class="services__manifesto-body">
+            En Impacto Digital cada acción tiene un propósito. Cada publicación responde
+            a una estrategia. Cada decisión tiene un objetivo. No hacemos ruido digital.
+            <strong>Creamos impacto.</strong>
+          </p>
+          <p class="services__manifesto-tagline">
+            "No vendemos publicaciones.<br />Diseñamos crecimiento estructurado."
+          </p>
+          <div class="services__manifesto-rule" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXAMPLES
+         ============================================================ -->
+    <section id="ejemplos" class="examples section" aria-labelledby="examplesHeading">
+      <div class="container">
+
+        <div class="section__header" style="text-align: center;">
+          <p class="section__eyebrow">Nuestro trabajo en acción</p>
+          <h2 id="examplesHeading" class="section__heading">Ejemplos de Nuestro Trabajo</h2>
+          <p class="section__subheading">
+            Resultados reales para marcas reales. Así se ve nuestra estrategia aplicada.
+          </p>
+        </div>
+
+        <!-- Ejemplos de Servicios -->
+        <div class="examples__group">
+          <div class="examples__group-header">
+            <span class="examples__group-label">Servicios</span>
+            <h3 class="examples__group-title">Ejemplos de Servicios</h3>
+          </div>
+          <div class="examples__grid">
+            <figure class="examples__item">
+              <img src="assets/services/service_1.png" alt="Ejemplo de servicio de marketing digital 1" class="examples__img" loading="lazy" />
+            </figure>
+            <figure class="examples__item">
+              <img src="assets/services/service_2.png" alt="Ejemplo de servicio de marketing digital 2" class="examples__img" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <!-- Ejemplos de Anuncios -->
+        <div class="examples__group">
+          <div class="examples__group-header">
+            <span class="examples__group-label">Anuncios</span>
+            <h3 class="examples__group-title">Ejemplos de Anuncios</h3>
+          </div>
+          <div class="examples__grid">
+            <figure class="examples__item">
+              <img src="assets/services/anuncio_1.png" alt="Ejemplo de anuncio digital 1" class="examples__img" loading="lazy" />
+            </figure>
+            <figure class="examples__item">
+              <img src="assets/services/anuncio_2.png" alt="Ejemplo de anuncio digital 2" class="examples__img" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <!-- Ejemplos de Landing Page -->
+        <div class="examples__group">
+          <div class="examples__group-header">
+            <span class="examples__group-label">Landing Pages</span>
+            <h3 class="examples__group-title">Ejemplos de Landing Page</h3>
+          </div>
+          <div class="examples__grid">
+            <figure class="examples__item">
+              <img src="assets/services/landing_page_ex1.png" alt="Ejemplo de landing page 1" class="examples__img" loading="lazy" />
+            </figure>
+            <figure class="examples__item">
+              <img src="assets/services/landing_page_ex2.png" alt="Ejemplo de landing page 2" class="examples__img" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         METHODOLOGY
+         ============================================================ -->
+    <section id="metodologia" class="methodology section" aria-labelledby="methodologyHeading">
+      <div class="container">
+
+        <div class="section__header">
+          <p class="section__eyebrow">Nuestro método</p>
+          <h2 id="methodologyHeading" class="section__heading">El Código del Marketing™</h2>
+          <p class="section__subheading">
+            En <strong>Impacto Digital</strong> no trabajamos al azar. Aplicamos un sistema estratégico
+            probado, diseñado para convertir negocios en marcas posicionadas. Este método se basa en
+            cinco fases estructuradas que alinean identidad, estrategia y ejecución.
+          </p>
+        </div>
+
+        <ol class="methodology__steps" aria-label="Fases del proceso estratégico">
+
+          <li class="methodology__step">
+            <div class="methodology__step-number" aria-hidden="true">01</div>
+            <div class="methodology__step-content">
+              <h3 class="methodology__step-title">Diagnóstico Estratégico</h3>
+              <p class="methodology__step-desc">Antes de crear, analizamos</p>
+              <ul class="methodology__step-list">
+                <li>Estado actual de la marca · Posicionamiento en el mercado</li>
+                <li>Competencia directa · Fortalezas · Debilidades · Oportunidades</li>
+              </ul>
+              <p class="methodology__step-closing">
+                Sin diagnóstico, no hay dirección. Sin dirección, no hay resultados.
+              </p>
+            </div>
+          </li>
+
+          <li class="methodology__step">
+            <div class="methodology__step-number" aria-hidden="true">02</div>
+            <div class="methodology__step-content">
+              <h3 class="methodology__step-title">Arquitectura de Marca</h3>
+              <p class="methodology__step-desc">Construimos la base estratégica.</p>
+              <ul class="methodology__step-list">
+                <li>Propuesta de valor clara · Mensaje central</li>
+                <li>Diferenciación competitiva · Personalidad de marca · Estructura de oferta</li>
+              </ul>
+              <p class="methodology__step-closing">
+                Aquí definimos qué hace única a tu marca y cómo debe comunicarse.
+              </p>
+            </div>
+          </li>
+
+          <li class="methodology__step">
+            <div class="methodology__step-number" aria-hidden="true">03</div>
+            <div class="methodology__step-content">
+              <h3 class="methodology__step-title">Diseño de Estrategia</h3>
+              <p class="methodology__step-desc">Creamos el plan de acción.</p>
+              <ul class="methodology__step-list">
+                <li>Objetivos claros · Estrategia de contenido · Ruta de crecimiento</li>
+                <li>Estructura de conversión · Propuesta mensual</li>
+              </ul>
+              <p class="methodology__step-closing">Nada se publica sin intención.</p>
+            </div>
+          </li>
+
+          <li class="methodology__step">
+            <div class="methodology__step-number" aria-hidden="true">04</div>
+            <div class="methodology__step-content">
+              <h3 class="methodology__step-title">Ejecución Inteligente</h3>
+              <p class="methodology__step-desc">Implementamos con coherencia y precisión.</p>
+              <ul class="methodology__step-list">
+                <li>Creación y gestión de contenido · Optimización de perfiles</li>
+                <li>Implementación de campañas · Monitoreo constante</li>
+              </ul>
+              <p class="methodology__step-closing">
+                Aquí la estrategia se convierte en presencia real.
+              </p>
+            </div>
+          </li>
+
+          <li class="methodology__step">
+            <div class="methodology__step-number" aria-hidden="true">05</div>
+            <div class="methodology__step-content">
+              <h3 class="methodology__step-title">Medición y Optimización</h3>
+              <p class="methodology__step-desc">Lo que no se mide, no crece.</p>
+              <ul class="methodology__step-list">
+                <li>Análisis de métricas · Ajustes estratégicos</li>
+                <li>Evaluación de inversión · Crecimiento progresivo</li>
+              </ul>
+              <p class="methodology__step-closing">
+                El Código del Marketing™ no termina en la publicación. Termina en el crecimiento.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+
+        <div class="methodology__difference">
+          <p class="methodology__difference-item">No trabajamos por volumen. <span>Trabajamos por posicionamiento.</span></p>
+          <p class="methodology__difference-item">No buscamos likes. <span>Construimos identidad.</span></p>
+          <p class="methodology__difference-item">No improvisamos. <span>Estructuramos.</span></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY US
+         ============================================================ -->
+    <section id="nosotros" class="why-us section" aria-labelledby="whyUsHeading">
+      <div class="container">
+
+        <div class="why-us__layout">
+
+          <!-- Image placeholder -->
+          <div class="why-us__visual">
+            <div class="parallax-wrapper parallax-wrapper--cutout">
+              <img
+                src="assets/letrero.jpg"
+                alt="Imagen sobre nosotros"
+                class="why-us__img parallax-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="why-us__content">
+            <p class="section__eyebrow">Por qué elegirnos</p>
+            <h2 id="whyUsHeading" class="section__heading">
+              ¿Por qué<br />elegirnos?
+            </h2>
+            <p class="why-us__lead">
+              En un mundo lleno de agencias que solo publican contenido, en <strong>Impacto Digital</strong>
+              trabajamos con estrategia, estructura y propósito. No somos gestores de redes.
+              Somos arquitectos de posicionamiento.
+            </p>
+
+            <ul class="why-us__list" role="list">
+              <li class="why-us__item">
+                <span class="why-us__item-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>No improvisamos — Estructuramos</strong>
+                  <p>Cada acción tiene una razón estratégica. No publicamos por publicar. Diseñamos crecimiento con dirección clara.</p>
+                </div>
+              </li>
+              <li class="why-us__item">
+                <span class="why-us__item-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>No vendemos "posts" — Construimos marcas</strong>
+                  <p>Tu negocio no necesita solo presencia digital. Necesita identidad, coherencia y posicionamiento real en el mercado.</p>
+                </div>
+              </li>
+              <li class="why-us__item">
+                <span class="why-us__item-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>No buscamos likes — Buscamos resultados</strong>
+                  <p>Nuestra prioridad no es el alcance vacío, sino el crecimiento medible: más visibilidad estratégica, mejor posicionamiento, mayor confianza de tu audiencia y conversión real.</p>
+                </div>
+              </li>
+              <li class="why-us__item">
+                <span class="why-us__item-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>No trabajamos en masa — Trabajamos con enfoque</strong>
+                  <p>Cada negocio es diferente. Por eso diseñamos estrategias personalizadas, alineadas a tu mercado, objetivo y etapa de crecimiento.</p>
+                </div>
+              </li>
+              <li class="why-us__item">
+                <span class="why-us__item-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>Pensamos como estrategas, ejecutamos como expertos</strong>
+                  <p>Unimos análisis, creatividad y ejecución para que tu marca no solo exista… sino destaque.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="why-us__closing">
+              <p class="why-us__closing-diff">
+                Otros publican. <span>Nosotros posicionamos.</span> Otros prometen. <span>Nosotros estructuramos.</span> Otros improvisan. <span>Nosotros aplicamos método.</span>
+              </p>
+              <p class="why-us__closing-tagline">
+                <strong>Impacto Digital no es una agencia más.</strong><br />
+                Es el sistema que convierte presencia en posicionamiento.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TEAM
+         ============================================================ -->
+    <section id="equipo" class="team section" aria-labelledby="teamHeading">
+      <div class="container">
+
+        <div class="section__header">
+          <p class="section__eyebrow">Las personas detrás</p>
+          <h2 id="teamHeading" class="section__heading">Conoce al Equipo</h2>
+          <p class="section__subheading">
+            Profesionales comprometidos con el crecimiento estratégico
+            de cada marca. Sin fórmulas repetidas, sin atajos.
+          </p>
+        </div>
+
+        <div class="team__grid">
+
+          <article class="team-card" aria-labelledby="member-1">
+            <div class="team-card__image-wrapper">
+              <img src="assets/angiemon.jpeg" alt="Angelica Montelongo" class="team-card__avatar" loading="lazy" width="160" height="160" />
+            </div>
+            <div class="team-card__info">
+              <h3 id="member-1" class="team-card__name">Angelica Montelongo</h3>
+              <p class="team-card__role">Directora Estratégica</p>
+              <p class="team-card__phone">+52 222 521 9154</p>
+              <p class="team-card__email">writer@angiemon.com</p>
+            </div>
+          </article>
+
+          <article class="team-card" aria-labelledby="member-2">
+            <div class="team-card__image-wrapper">
+              <img src="assets/default-avatar-profile-icon-social-media-user-photo-vector.jpg" alt="Miembro del equipo" class="team-card__avatar" loading="lazy" width="160" height="160" />
+            </div>
+            <div class="team-card__info">
+              <h3 id="member-2" class="team-card__name">Nombre Apellido</h3>
+              <p class="team-card__role">----- ------</p>
+              <p class="team-card__phone">+52 000 000 0000</p>
+              <p class="team-card__email">correo@impactodigital.com</p>
+            </div>
+          </article>
+
+          <article class="team-card" aria-labelledby="member-3">
+            <div class="team-card__image-wrapper">
+              <img src="assets/default-avatar-profile-icon-social-media-user-photo-vector.jpg" alt="Miembro del equipo" class="team-card__avatar" loading="lazy" width="160" height="160" />
+            </div>
+            <div class="team-card__info">
+              <h3 id="member-3" class="team-card__name">Nombre Apellido</h3>
+              <p class="team-card__role">----- ------</p>
+              <p class="team-card__phone">+52 000 000 0000</p>
+              <p class="team-card__email">correo@impactodigital.com</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW WE WORK
+         ============================================================ -->
+    <section id="como-trabajamos" class="how-we-work section" aria-labelledby="howWeWorkHeading">
+      <div class="container">
+
+        <div class="section__header">
+          <p class="section__eyebrow">Nuestro proceso profesional</p>
+          <h2 id="howWeWorkHeading" class="section__heading">¿Cómo Trabajamos?</h2>
+          <p class="section__subheading">
+            En Impacto Digital cada proyecto sigue una estructura clara. No trabajamos por intuición,
+            trabajamos por método. Nuestro proceso está diseñado para comprender tu negocio,
+            estructurar estrategia y generar crecimiento.
+          </p>
+        </div>
+
+        <div class="how-we-work__layout">
+
+          <!-- Steps + footer -->
+          <div class="how-we-work__main">
+            <ol class="how-we-work__steps" aria-label="Fases de trabajo">
+
+              <li class="how-we-work__step">
+                <div class="how-we-work__step-number" aria-hidden="true">01</div>
+                <div class="how-we-work__step-content">
+                  <h3 class="how-we-work__step-title">Análisis y Diagnóstico</h3>
+                  <p class="how-we-work__step-subtitle">Antes de ejecutar, entendemos.</p>
+                  <ul class="how-we-work__step-list">
+                    <li>Conocemos tu negocio · Analizamos tu presencia digital</li>
+                    <li>Detectamos fortalezas y oportunidades · Identificamos tu mercado y público</li>
+                    <li>Evaluamos tu posicionamiento actual</li>
+                  </ul>
+                  <p class="how-we-work__step-closing">Aquí definimos el punto de partida.</p>
+                </div>
+              </li>
+
+              <li class="how-we-work__step">
+                <div class="how-we-work__step-number" aria-hidden="true">02</div>
+                <div class="how-we-work__step-content">
+                  <h3 class="how-we-work__step-title">Definición Estratégica</h3>
+                  <p class="how-we-work__step-subtitle">Construimos la base.</p>
+                  <ul class="how-we-work__step-list">
+                    <li>Objetivos claros · Enfoque de crecimiento · Posicionamiento deseado</li>
+                    <li>Dirección de comunicación · Prioridades identificadas</li>
+                  </ul>
+                  <p class="how-we-work__step-closing">Sin estrategia, no hay dirección.</p>
+                </div>
+              </li>
+
+              <li class="how-we-work__step">
+                <div class="how-we-work__step-number" aria-hidden="true">03</div>
+                <div class="how-we-work__step-content">
+                  <h3 class="how-we-work__step-title">Diseño del Plan de Acción</h3>
+                  <p class="how-we-work__step-subtitle">Estructuramos el camino.</p>
+                  <ul class="how-we-work__step-list">
+                    <li>Estrategia de contenido · Estructura de presencia digital</li>
+                    <li>Organización de comunicación · Ruta de posicionamiento · Planeación de crecimiento</li>
+                  </ul>
+                  <p class="how-we-work__step-closing">Cada acción responde a un objetivo.</p>
+                </div>
+              </li>
+
+              <li class="how-we-work__step">
+                <div class="how-we-work__step-number" aria-hidden="true">04</div>
+                <div class="how-we-work__step-content">
+                  <h3 class="how-we-work__step-title">Implementación</h3>
+                  <p class="how-we-work__step-subtitle">La estrategia se convierte en acción.</p>
+                  <ul class="how-we-work__step-list">
+                    <li>Gestión y ejecución de contenido · Optimización de perfiles</li>
+                    <li>Desarrollo de presencia digital · Implementación de campañas (si aplica)</li>
+                    <li>Supervisión continua</li>
+                  </ul>
+                  <p class="how-we-work__step-closing">Aquí comienza el impacto real.</p>
+                </div>
+              </li>
+
+              <li class="how-we-work__step">
+                <div class="how-we-work__step-number" aria-hidden="true">05</div>
+                <div class="how-we-work__step-content">
+                  <h3 class="how-we-work__step-title">Medición y Optimización</h3>
+                  <p class="how-we-work__step-subtitle">El crecimiento se construye con datos.</p>
+                  <ul class="how-we-work__step-list">
+                    <li>Análisis de resultados · Ajustes estratégicos · Optimización continua</li>
+                    <li>Mejora de desempeño · Escalamiento progresivo</li>
+                  </ul>
+                  <p class="how-we-work__step-closing">Lo que se mide, se mejora. Lo que se mejora, crece.</p>
+                </div>
+              </li>
+
+            </ol>
+
+            <div class="how-we-work__footer">
+              <p class="how-we-work__footer-item">No buscamos por improvisación. <span>Trabajamos por estructura.</span></p>
+              <p class="how-we-work__footer-item">No buscamos ruido digital. <span>Buscamos posicionamiento.</span></p>
+              <p class="how-we-work__footer-item">No prometemos milagros. <span>Construimos resultados.</span></p>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="how-we-work__visual">
+            <div class="parallax-wrapper parallax-wrapper--cutout">
+              <img
+                src="assets/mujer_2-Photoroom.png"
+                alt="Impacto Digital — Proceso estratégico de trabajo"
+                class="how-we-work__img parallax-img"
+              />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contacto" class="contact section" aria-labelledby="contactHeading">
+      <div class="container">
+
+        <div class="contact__layout">
+
+          <!-- Info column -->
+          <div class="contact__info">
+            <p class="section__eyebrow">Hablemos</p>
+            <h2 id="contactHeading" class="section__heading">
+              ¿Listo para posicionar<br /> tu marca?
+            </h2>
+            <p class="contact__lead">
+              Cuéntanos sobre tu negocio. El primer paso hacia una estrategia
+              sólida comienza con una conversación honesta sobre dónde estás
+              y hacia dónde quieres llegar.
+            </p>
+
+            <div class="contact__direct" aria-label="Contacto directo">
+              <p class="contact__direct-label">Contáctanos directamente</p>
+
+              <a
+                href="https://wa.me/523310067968"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__direct-btn"
+                aria-label="Enviar mensaje por WhatsApp"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L.057 23.428a.75.75 0 0 0 .917.928l5.698-1.49A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.073-1.389l-.361-.214-3.742.979.998-3.648-.235-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                </svg>
+                Enviar mensaje
+              </a>
+
+              <a
+                href="tel:+523310067968"
+                class="contact__direct-btn contact__direct-btn--ghost"
+                aria-label="Llamar al +52 33 1006 7968"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.06 6.06l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                +52 33 1006 7968
+              </a>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="contact__form-wrapper">
+            <form
+              class="contact-form"
+              id="contactForm"
+              novalidate
+              aria-label="Formulario de contacto"
+            >
+
+              <!-- Name row -->
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="firstName" class="form__label">
+                    Nombre <span class="required-mark" aria-label="requerido">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="form__input"
+                    placeholder="Tu nombre"
+                    autocomplete="given-name"
+                    required
+                    aria-required="true"
+                    aria-describedby="firstNameError"
+                  />
+                  <span
+                    class="form__error"
+                    id="firstNameError"
+                    role="alert"
+                    aria-live="polite"
+                  ></span>
+                </div>
+
+                <div class="form__group">
+                  <label for="lastName" class="form__label">
+                    Apellido <span class="required-mark" aria-label="requerido">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="form__input"
+                    placeholder="Tu apellido"
+                    autocomplete="family-name"
+                    required
+                    aria-required="true"
+                    aria-describedby="lastNameError"
+                  />
+                  <span
+                    class="form__error"
+                    id="lastNameError"
+                    role="alert"
+                    aria-live="polite"
+                  ></span>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form__group">
+                <label for="email" class="form__label">
+                  Correo electrónico <span class="required-mark" aria-label="requerido">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="tu@correo.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="emailError"
+                />
+                <span
+                  class="form__error"
+                  id="emailError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <!-- Phone -->
+              <div class="form__group">
+                <label for="phone" class="form__label">
+                  Teléfono <span class="required-mark" aria-label="requerido">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form__input"
+                  placeholder="+52 000 000 0000"
+                  autocomplete="tel"
+                  required
+                  aria-required="true"
+                  aria-describedby="phoneError"
+                />
+                <span
+                  class="form__error"
+                  id="phoneError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <!-- Service (optional) -->
+              <div class="form__group">
+                <label for="service" class="form__label">
+                  Servicio de interés
+                  <span class="form__optional">(Opcional)</span>
+                </label>
+                <div class="form__select-wrapper">
+                  <select
+                    id="service"
+                    name="service"
+                    class="form__select"
+                    aria-label="Selecciona el servicio de tu interés"
+                  >
+                    <option value="">Selecciona un servicio</option>
+                    <option value="estrategia-marca">Estrategia de Marca</option>
+                    <option value="anuncios-digitales">Marketing Digital Estratégico</option>
+                    <option value="redes-sociales">Gestión y Crecimiento en Redes Sociales</option>
+                    <option value="publicidad-digital">Publicidad digital</option>
+                    <option value="landing-pages">Landing pages</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Details (optional) -->
+              <div class="form__group">
+                <label for="details" class="form__label">
+                  Detalles
+                  <span class="form__optional">(Opcional)</span>
+                </label>
+                <textarea
+                  id="details"
+                  name="details"
+                  class="form__input form__textarea"
+                  placeholder="Cuéntanos más sobre tu proyecto o lo que necesitas..."
+                  rows="4"
+                  autocomplete="off"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn--primary btn--full">
+                Enviar mensaje
+                <span class="btn__icon" aria-hidden="true">→</span>
+              </button>
+
+              <!-- Success message (hidden by default) -->
+              <p
+                class="form__success"
+                id="formSuccess"
+                role="alert"
+                aria-live="polite"
+                tabindex="-1"
+                hidden
+              >
+                ¡Listo! Se abrió WhatsApp con tu mensaje. Solo da clic en Enviar y nos pondremos en contacto contigo pronto.
+              </p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOCIAL CONNECT
+         ============================================================ -->
+    <section class="social-connect section" aria-label="Encuéntranos en redes sociales">
+      <div class="container">
+
+        <div class="social-connect__header">
+          <div class="social-connect__ornament" aria-hidden="true">
+            <span></span>
+            <svg viewBox="0 0 12 12" width="10" height="10" fill="currentColor"><polygon points="6,0 7.5,4.5 12,6 7.5,7.5 6,12 4.5,7.5 0,6 4.5,4.5"/></svg>
+            <span></span>
+          </div>
+          <h2 class="social-connect__heading">Encuéntranos</h2>
+          <p class="social-connect__sub">Síguenos y mantente al tanto de nuestro trabajo estratégico.</p>
+        </div>
+
+        <div class="social-connect__grid">
+
+          <!-- Email -->
+          <a href="mailto:writer@angiemon.com" class="social-card" aria-label="Escríbenos por correo">
+            <span class="social-card__watermark" aria-hidden="true">Email</span>
+            <div class="social-card__icon-ring">
+              <svg class="social-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <polyline points="2,4 12,13 22,4"/>
+              </svg>
+            </div>
+            <strong class="social-card__name">Correo</strong>
+            <span class="social-card__handle">writer@angiemon.com</span>
+            <span class="social-card__action">Escribir <span aria-hidden="true">→</span></span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/impactodigital007/" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Síguenos en Instagram @impactodigital007">
+            <span class="social-card__watermark" aria-hidden="true">IG</span>
+            <div class="social-card__icon-ring">
+              <svg class="social-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4.5"/>
+                <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <strong class="social-card__name">Instagram</strong>
+            <span class="social-card__handle">@impactodigital007</span>
+            <span class="social-card__action">Seguir <span aria-hidden="true">→</span></span>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/Impactodigital007" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Síguenos en Facebook Impactodigital007">
+            <span class="social-card__watermark" aria-hidden="true">FB</span>
+            <div class="social-card__icon-ring">
+              <svg class="social-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </div>
+            <strong class="social-card__name">Facebook</strong>
+            <span class="social-card__handle">Impactodigital007</span>
+            <span class="social-card__action">Seguir <span aria-hidden="true">→</span></span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__layout">
+        <div class="footer__brand">
+          <p class="footer__logo">Impacto<span> Digital</span></p>
+          <p class="footer__tagline">
+            Posicionamos marcas con estrategia, coherencia e intención comercial clara.
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Navegación del pie de página">
+          <ul role="list">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#como-trabajamos">Cómo Trabajamos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="mailto:writer@angiemon.com" class="footer__social-link" aria-label="Correo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="2,4 12,13 22,4"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/impactodigital007/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4.5"/>
+              <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/Impactodigital007" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="currentYear"></span> Impacto Digital.
+          Todos los derechos reservados.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" type="module"></script>
+
+</body>
+</html>

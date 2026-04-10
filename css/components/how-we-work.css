@@ -1,0 +1,231 @@
+/* ============================================================
+   HOW WE WORK — "¿Cómo Trabajamos?" five-phase process
+   ============================================================ */
+
+.how-we-work {
+  background-color: var(--color-bg-elevated);
+}
+
+.how-we-work .section__header {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.how-we-work .section__subheading {
+  margin-inline: auto;
+}
+
+/* ---- Two-column layout ---- */
+
+.how-we-work__layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.how-we-work__main {
+  min-width: 0;
+}
+
+.how-we-work__visual {
+  position: sticky;
+  top: calc(var(--navbar-height) + 2rem);
+}
+
+.how-we-work__img {
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  display: block;
+}
+
+/* ---- Steps list ---- */
+
+.how-we-work__steps {
+  position: relative;
+  padding-left: clamp(3.5rem, 8vw, 6rem);
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+/* Vertical connecting thread */
+.how-we-work__steps::before {
+  content: '';
+  position: absolute;
+  left: calc(clamp(3.5rem, 8vw, 6rem) / 2 - 0.5px);
+  top: 2rem;
+  bottom: 2rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-accent) 12%,
+    var(--color-accent) 88%,
+    transparent
+  );
+  opacity: 0.28;
+}
+
+/* ---- Individual step ---- */
+
+.how-we-work__step {
+  display: flex;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding-block: clamp(1.75rem, 3.5vw, 2.5rem);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  transition: padding-left var(--transition-base);
+  cursor: default;
+}
+
+.how-we-work__step:last-child { border-bottom: none; }
+
+.how-we-work__step:hover { padding-left: var(--space-4); }
+
+/* ---- Circle number ---- */
+
+.how-we-work__step-number {
+  position: absolute;
+  left: calc(-1 * clamp(3.5rem, 8vw, 6rem));
+  top: clamp(1.75rem, 3.5vw, 2.5rem);
+  width: clamp(2.5rem, 5vw, 3.25rem);
+  height: clamp(2.5rem, 5vw, 3.25rem);
+  background-color: var(--color-bg-surface);
+  border: 1.5px solid var(--color-border-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-accent-text);
+  flex-shrink: 0;
+  transition:
+    background-color var(--transition-base),
+    border-color     var(--transition-base),
+    color            var(--transition-base);
+}
+
+.how-we-work__step:hover .how-we-work__step-number {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--primitive-black);
+}
+
+/* ---- Step content ---- */
+
+.how-we-work__step-content { flex: 1; }
+
+.how-we-work__step-title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+  color: var(--color-text-primary);
+  transition: color var(--transition-base);
+}
+
+.how-we-work__step:hover .how-we-work__step-title {
+  color: var(--color-accent-text);
+}
+
+.how-we-work__step-subtitle {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-accent-text);
+  margin-bottom: var(--space-3);
+  opacity: 0.85;
+}
+
+.how-we-work__step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.how-we-work__step-list li {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  padding-left: var(--space-4);
+  position: relative;
+  line-height: 1.6;
+}
+
+.how-we-work__step-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  opacity: 0.7;
+}
+
+.how-we-work__step-closing {
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
+/* ---- Footer block ---- */
+
+.how-we-work__footer {
+  max-width: 860px;
+  margin-inline: auto;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(1.75rem, 4vw, 2.5rem) clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--color-border-hover);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.how-we-work__footer-item {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.how-we-work__footer-item span {
+  color: var(--color-accent-text);
+  font-weight: 500;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 860px) {
+  .how-we-work__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .how-we-work__visual {
+    position: static;
+    order: -1;
+  }
+
+  .how-we-work__img {
+    max-height: 440px;
+  }
+}
+
+@media (max-width: 640px) {
+  .how-we-work__steps {
+    padding-left: 3.75rem;
+  }
+
+  .how-we-work__steps::before {
+    left: 1.375rem;
+  }
+
+  .how-we-work__step-number {
+    left: -3.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
