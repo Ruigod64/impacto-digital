@@ -309,7 +309,7 @@
   height: clamp(120px, 22vh, 200px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .hero__analytics {
     width: 100%;
   }

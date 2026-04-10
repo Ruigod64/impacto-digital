@@ -174,6 +174,11 @@
 
 html {
   color-scheme: dark;
+  overflow-x: clip; /* prevents horizontal overflow from wide SVGs displacing fixed elements on mobile */
+}
+
+body {
+  scrollbar-gutter: stable; /* reserves scrollbar space always — prevents layout shift when menu open/close hides the scrollbar */
 }
 
 [data-theme="light"] {
