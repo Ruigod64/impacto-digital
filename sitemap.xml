@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!--
+    Página principal — contiene todo el contenido del sitio (one-page).
+    Prioridad máxima. Se actualiza con frecuencia conforme se agregan
+    servicios, ejemplos o se ajusta el contenido.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!--
+    Sección de Servicios — página más importante del negocio.
+    Lista los servicios que ofrece la agencia; se actualiza cuando
+    se añaden o modifican servicios.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#servicios</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!--
+    Sección de Contacto — segunda página más importante.
+    Punto de conversión principal; cambia poco salvo datos de contacto.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#contacto</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!--
+    Sección Sobre Nosotros — presenta la agencia y su propuesta de valor.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#sobre-nosotros</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!--
+    Sección Ejemplos — portafolio de trabajos realizados.
+    Se actualiza cada vez que se agregan nuevos casos.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#ejemplos</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!--
+    Sección Metodología — explica el proceso de trabajo.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#metodologia</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!--
+    Sección Equipo — presenta a los integrantes de la agencia.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#equipo</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!--
+    Sección Cómo Trabajamos — detalla el flujo de trabajo con el cliente.
+  -->
+  <url>
+    <loc>https://impactodigital007.com/#como-trabajamos</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

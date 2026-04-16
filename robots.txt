@@ -1,0 +1,22 @@
+# robots.txt — Impacto Digital
+# https://impactodigital007.com/
+
+# Permitir acceso completo a todos los rastreadores
+User-agent: *
+Allow: /
+
+# Bloquear rastreadores de IA que no aportan tráfico
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Ubicación del sitemap
+Sitemap: https://impactodigital007.com/sitemap.xml
